@@ -20,32 +20,45 @@ a {
 
 /* Container */
 .container {
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
 /* Header */
 .site-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
   padding: 20px 0;
   border-bottom: 1px solid #eaeaea;
 }
 
-.site-header .logo h1 {
-  font-size: 1.8rem;
-  color: #333;
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header .logo {
+  width: 35.97px;
+  height: 35.97px;
+  margin-left: 3%;
 }
 
 .main-nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 10px;
+
 }
 
 .main-nav ul li a {
-  font-weight: 700;
+  font-weight: 600;
   padding: 8px 12px;
-  border-radius: 5px;
+  text-align:center;
+  float:center;
+  border-radius: 8px;
   transition: background-color 0.3s ease;
 }
 
@@ -227,3 +240,51 @@ a {
 .site-footer .social-media a:hover {
   color: #02e4f0;
 }
+
+/* Video Gallery Section */
+
+
+.video-gallery-section {
+  background-color: #eaf8f8;
+  width: 100%;
+  margin: 0 auto 40px;
+}
+
+.main-video-container {
+  width: 80%;
+  margin: 0 auto 40px;
+  position: relative;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.main-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.video-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.video-card h3 {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #02e4f0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
